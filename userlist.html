@@ -459,7 +459,7 @@
             </div>
             <div class="VSSE__modal-body-line"></div>
             <div class="VSSE__modal-body-form">
-                <form action="#">
+                <!-- <form method="post"> -->
                     <div class="VSSE__modal-form-group">
                         <h5 class="VSSE__modal-form-title">HỌ VÀ TÊN<span style="color: #D9534F;"> *</span></h5>
                         <input type="text" class="VSSE__modal-form-input" placeholder="Nhập họ tên">
@@ -524,34 +524,34 @@
                       <button class="VSSE__modal-btn-close js-VSSE__modal-btn-close" onclick="modalClose()">Thoát</button>
                       <button class="VSSE__modal-btn-confirm" onclick="popupOpen()" >Xác nhận</button>
                     </div>
-                </form>
+                <!-- </form> -->
             </div>
         </div>
     </div>
     <!-- Popup html  -->
     <div class="VSSE__popup-container width-100vw heigh-100 d-flex align-item-center js-VSSE__popup-container">
-      <div class="VSSE__popup-overlay js-VSSE__modal-overlay" >
-      </div>
-      <div class="VSSE__popup">
-        <div class="VSSE__popup-header">
-          <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 100 100" fill="none">
-            <path d="M54.1667 54.1667H45.8333V29.1667H54.1667M45.8333 62.5H54.1667V70.8333H45.8333M65.5417 12.5H34.4583L12.5 34.4583V65.5417L34.4583 87.5H65.5417L87.5 65.5417V34.4583L65.5417 12.5Z" fill="#FFC836"/>
-          </svg>
-          <h3 class="VSSE__popup-header-title">Xác nhận</h3>
-        </div>
-        <div class="VSSE__popup-body">
-          <p class="VSSE__popup-body-text">Bạn đã chắc chắn muốn tạo tài khoản với những thông tin đã nhập?</p>
-        </div>
-        <div class="VSSE__popup-footer">
-          <button class="VSSE__modal-btn-close js-VSSE__modal-btn-close" onclick="popupClose()">Thoát</button>
-          <button class="VSSE__modal-btn-confirm" >Xác nhận</button>
+      <div class="VSSE__popup-overlay js-VSSE__modal-overlay d-flex align-item-center" >
+        <div class="VSSE__popup">
+          <div class="VSSE__popup-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 100 100" fill="none">
+              <path d="M54.1667 54.1667H45.8333V29.1667H54.1667M45.8333 62.5H54.1667V70.8333H45.8333M65.5417 12.5H34.4583L12.5 34.4583V65.5417L34.4583 87.5H65.5417L87.5 65.5417V34.4583L65.5417 12.5Z" fill="#FFC836"/>
+            </svg>
+            <h3 class="VSSE__popup-header-title">Xác nhận</h3>
+          </div>
+          <div class="VSSE__popup-body">
+            <p class="VSSE__popup-body-text">Bạn đã chắc chắn muốn tạo tài khoản với những thông tin đã nhập?</p>
+          </div>
+          <div class="VSSE__popup-footer">
+            <button class="VSSE__modal-btn-close js-VSSE__modal-btn-close" onclick="popupClose()">Thoát</button>
+            <button class="VSSE__modal-btn-confirm" >Xác nhận</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
     <script src="./assets/js/main.js">
 
-      <!-- const addBtn = document.querySelector(".js-VSSE__body-insert");
+      const addBtn = document.querySelector(".js-VSSE__body-insert");
       const closeModal = document.querySelector(".js-VSSE__modal-btn-close");
       const modal = document.querySelector(".VSSE__modal");
       const modelOverlay = document.querySelector(".js-VSSE__modal-overlay");
@@ -565,7 +565,7 @@
         modal.classList.remove('VSSE__modal-open')
       }
         closeModal.addEventListener('click',hideAddAcc);
-        modelOverlay.addEventListener('click',hideAddAcc); -->
+        modelOverlay.addEventListener('click',hideAddAcc);
     </script>
 </body>
 

@@ -82,22 +82,21 @@ function w3_open() {
 
 // Modal js
 
-const popupModal = document.querySelector(".js-VSSE__popup-container");
-const addBtn = document.querySelector(".js-VSSE__body-insert");
-const closeModal = document.querySelector(".js-VSSE__modal-btn-close");
-const modal = document.querySelector(".VSSE__modal");
-const modelOverlay = document.querySelector(".js-VSSE__modal-overlay");
-
 function modalOpen() {
+  const modal = document.querySelector(".VSSE__modal");
   modal.classList.add('VSSE__modal-open');
 }
+
 function modalClose() {
+  const modal = document.querySelector(".VSSE__modal");
   modal.classList.remove('VSSE__modal-open');
 }
 function popupOpen() {
+  const popupModal = document.querySelector(".js-VSSE__popup-container");
   popupModal.classList.add('popup-open');
 }
 function popupClose() {
+  const popupModal = document.querySelector(".js-VSSE__popup-container");
   popupModal.classList.remove('popup-open');
 }
 
