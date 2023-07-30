@@ -78,3 +78,27 @@ function w3_open() {
     document.querySelector(".VSSE__header-title").style.marginLeft = "20px";
     console.log(document.getElementById("showmenu"));
   }
+
+
+// Modal js
+
+const popupModal = document.querySelector(".js-VSSE__popup-container");
+const addBtn = document.querySelector(".js-VSSE__body-insert");
+const closeModal = document.querySelector(".js-VSSE__modal-btn-close");
+const modal = document.querySelector(".VSSE__modal");
+const modelOverlay = document.querySelector(".js-VSSE__modal-overlay");
+
+function modalOpen() {
+  modal.classList.add('VSSE__modal-open');
+}
+function modalClose() {
+  modal.classList.remove('VSSE__modal-open');
+}
+function popupOpen() {
+  popupModal.classList.add('popup-open');
+}
+function popupClose() {
+  popupModal.classList.remove('popup-open');
+}
+
+ 

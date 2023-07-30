@@ -39,6 +39,7 @@ html {
     border-radius: 6px;
     background: #77DCAE;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: none;
 }
 
 /* CSS thẻ select Select  */
@@ -144,18 +145,19 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10;
     /* display: none; */
 }
 
 /* CSS thêm mới */
+
 .VSSE__modal {
     display: none;
 }
 .VSSE__modal-overlay {
     position: absolute;
-    position: absolute;
-    width: 100vw;
-    height: 900px;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.50);
 }
 .VSSE__modal-body {
@@ -165,6 +167,163 @@ html {
     background-color: #fff;
     position: absolute;
     right: 0;
-    padding: 10px 20px;
-    /* overflow: scroll; */
+    padding: 30px 40px;
+    overflow: scroll;
+    animation: modalAddAccFadeIn ease-in-out 0.3s;
 } 
+.VSSE__modal-body-header-title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 33.8px */
+    margin-bottom: 25px;
+}
+.VSSE__modal-form-title {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    margin-top: 25px;
+}
+.VSSE__modal-body-line {
+    border-bottom: 1px dashed #C5C5C5;
+}
+.VSSE__modal-form-select,
+.VSSE__modal-form-input {
+    width: 100%;
+    padding: 7px 14px;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+    outline: none;
+}
+.VSSE__modal-form-area {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+    outline: none;
+}
+
+.VSSE__modal-btn-close,
+.VSSE__modal-btn-confirm {
+    min-width: 150px;
+    padding: 7px 35px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+.VSSE__modal-btn-close {
+    background-color: #D9534F;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.VSSE__modal-btn-confirm {
+    background-color: #77DCAE;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.VSSE__modal-form-btn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+.VSSE__modal-body::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+}
+.VSSE__modal-open {
+    display: block;
+}
+
+@keyframes modalAddAccFadeIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* CSS popup  */
+.VSSE__popup-container {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    display: none;
+
+}
+.VSSE__popup {
+    position: fixed;
+    width: 450px;
+    height: 280px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    animation: popupFadeIn ease-in-out 0.3s ;
+}
+.VSSE__popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.50);
+}
+.VSSE__popup-body-text {
+    padding: 20px 0;
+}
+.VSSE__popup-header-title {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.VSSE__popup-body-text {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.popup-open {
+    display: flex;
+} 
+
+@keyframes popupFadeIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(-50%);
+        opacity: 1;
+    }
+}

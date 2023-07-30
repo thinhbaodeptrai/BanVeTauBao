@@ -1,9 +1,7 @@
 .VSSE-leftmenu-container {
     width: 22%;
     background: #1E1E2D;
-    /* min-width: 300px; */
     max-width: 350px;
-    /* display: none; */
 }
 .VSSE__content {
     padding: 20px;
@@ -15,7 +13,7 @@
     align-items: center ;
     justify-content: space-between;
     padding: 15px 12px 10px 20px;
-    border: 1px dashed #393945;
+    border-bottom: 1px dashed #393945;
 }
 .VSSE__leftmenu-header-button {
     display: flex;
@@ -95,4 +93,3 @@
     display: none; 
 }
 
-/* Table CSS  */
