@@ -2,10 +2,35 @@ html {
     font-family: Montserrat;
 }
 
+/* Table CSS  */
+
+table {
+    font-family: Montserrat;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+      border: 1px solid #ECECEC;
+      text-align: center;
+  }
+  
+  tr:nth-child(even) {
+      background-color: #ECECEC;
+      border-left: 1px solid #777777;
+  }
+  th {
+    padding: 18px 5px;
+  }
+
+  td {
+    padding: 20px 15px;
+  }
+
 .VSSE__body-container {
     width: 100%;
-    height: 1100px;
     background: #F5F5F5;
+    padding-bottom: 60px;
     
 }
 
@@ -14,9 +39,8 @@ html {
     background: #fff;
     height: 90%;
     border-radius: 10px;
-    overflow: scroll;
-    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.10);
-    /* display: none; */
+    /* overflow: scroll; */
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.20);
 }
 .VSSE__body-body-title {
     padding: 30px 20px 20px 20px;
@@ -31,10 +55,16 @@ html {
     margin: auto;
 }
 .VSSE__body-insert {
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+
     text-decoration: none;
     padding: 10px 20px;
-    color: #FFF;
-    font-size: 20px;
     font-weight: 700;
     border-radius: 6px;
     background: #77DCAE;
@@ -134,7 +164,7 @@ html {
 /* CSS footer next page  */
 
 .VSSE__next-page-container {
-    float: right;
+    justify-content: flex-end;
 }
 .VSSE__modal {
     position: fixed;
@@ -206,35 +236,7 @@ html {
     outline: none;
 }
 
-.VSSE__modal-btn-close,
-.VSSE__modal-btn-confirm {
-    min-width: 150px;
-    padding: 7px 35px;
-    border: none;
-    outline: none;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
-    cursor: pointer;
-    outline: none;
-}
-.VSSE__modal-btn-close {
-    background-color: #D9534F;
-    color: #FFF;
-    text-align: center;
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 600;
-}
 
-.VSSE__modal-btn-confirm {
-    background-color: #77DCAE;
-    color: #FFF;
-    text-align: center;
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 600;
-    margin-left: 30px;
-}
 .VSSE__modal-form-btn {
     margin-top: 25px;
     display: flex;
@@ -260,72 +262,3 @@ html {
 }
 
 
-/* CSS popup  */
-.VSSE__popup-container {
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    display: none;
-
-}
-.VSSE__popup {
-    position: fixed;
-    width: 450px;
-    height: 280px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    text-align: center;
-    border-radius: 10px;
-    animation: popupFadeIn ease-in-out 0.3s ;
-}
-.VSSE__popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.50);
-    justify-content: center;
-}
-.VSSE__popup-body-text {
-    padding: 20px 0;
-}
-.VSSE__popup-header-title {
-    color: #000;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin: 0;
-}
-.VSSE__popup-body-text {
-    color: #000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-.popup-open {
-    display: flex;
-} 
-
-@keyframes popupFadeIn {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(-50%);
-        opacity: 1;
-    }
-}

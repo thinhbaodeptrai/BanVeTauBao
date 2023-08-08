@@ -1,0 +1,204 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Montserrat;
+}
+
+.app {
+    background: #F5F5F5;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+table {
+    background-color: #fff;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.20);
+}
+td{
+    border-bottom: 1px solid #ECECEC;
+    border-left: 1px solid #ECECEC;
+    border-right: 1px solid #ECECEC;
+    text-align: center;
+    width: 1000px;
+}
+
+.authorization__body-table-heading th {
+    padding: 20px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+    font-style: normal;
+    line-height: 130%; 
+    
+}
+
+td {
+    padding: 8px;
+    height: 50px;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    height: 55px;
+    max-height: 55px;
+}
+
+.authorization__header {
+    padding: 30px 0;
+}
+.authorization__body-btn-reset,
+.authorization__body-btn-confirm {
+    padding: 8px 20px;
+    min-width: 120px;
+    text-align: center;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 108.333% */
+    cursor: pointer;
+} 
+.authorization__body-btn-reset {
+    border-radius: 6px;
+    background: #D9534F;
+}
+.authorization__body-btn-confirm {
+    margin-left: 20px;
+    border-radius: 6px;
+    background: #77DCAE;
+}
+.authorization__body-table-heading {
+    opacity: 0.7;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 31.2px */
+    background-color: #FFFFFF0D;
+    border-bottom: 1.5px dashed #999;
+   
+}
+.authorization__table-body-th {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px;
+    font-style: normal;
+    
+}
+.overlay-row {
+    position: relative;
+  }
+  
+  .overlay-row::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Đặt lớp phủ lên trên các thẻ con */
+    background-color: #f9f9f9;
+  }
+  
+.authorization {
+    width: 95%;
+    margin: auto;
+}
+
+.title-top-right, 
+.title-bottom-left {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 31.2px */
+}
+
+.title-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px;
+}
+
+.title-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 8px;
+} 
+
+
+  
+
+
+/* Hide the default checkbox */
+.custom-checkbox {
+    display: none;
+    /* overflow: hidden; */
+  }
+  
+  /* Style the custom checkbox as a circle */
+  .custom-checkbox + .custom-label {
+    margin: auto;
+    display: block;
+    position: relative;
+    width: 27px;
+    height: 27px;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  /* Style the checked state of the custom checkbox */
+  .custom-checkbox:checked + .custom-label {
+    border: none;
+    background-image: url('../imgs/ri_checkbox-circle-fill3.png');
+    background-size: cover;
+    width: 33px;
+    height: 33px;
+  }
+  
+    
+  .element-with-border {
+    /* width: 200px; */
+    /* height: 200px; */
+    position: relative;
+  }
+  
+  .element-with-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(22deg, transparent 49.5%, #999 49.5%, #999 50.5%, transparent 50.5%),
+                linear-gradient(135deg, transparent 50.5%, black 49.5%, black 50.5%, transparent 50.5%);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    /* border: 2px dashed black; */
+
+  }
